@@ -31,7 +31,8 @@
 \usepackage{stix2}
 
 \usepackage{yfonts}                 % The yfonts package is used for the beautiful first Capital letter of a Paragraph
-\usepackage{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows, circuits, shapes.geometric}
 
 %% Packages for Tables
 \usepackage{makecell}
@@ -99,7 +100,7 @@
     \vspace*{\baselineskip}
     \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
     \rule{\textwidth}{0.4pt}\\[\baselineskip]
-    {\LARGE Testing Board for Quadcaptor Parameters and Stability using Laser Detection and Ranging} 
+    {\LARGE Testing Board for Quadcoptor Parameters Visualization and Stability Analysis using Laser Detection and Ranging} 
     \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
     \rule{\textwidth}{1.6pt}\\[\baselineskip]
     \scshape
@@ -124,6 +125,190 @@
 \newpage
 
 \section{Introduction}
+
+Quadcopter and Aircraft applications in general require a lot of precision to ensure that the desired position and velocity are met. For even with very advanced implementations of control systems and accounting for nonlinear dyanamics and noise through various control approaches such as estimations through Linear or Gaussian Quadratic Estimations. Which is why it is necessary to include an independent testing mechanism where we can analyze the various parameters that a portable aircraft designer is interested in, such as:
+
+\begin{itemize}
+  \item Positioning
+  \item Velocity
+  \item Acceleration
+  \item Orientation
+\end{itemize}
+
+To test some of these parameters, a testing bench capable of measuring the parameters using sensors and displaying them in a user-friendly interface,for the aircraft designer would be a good starting point.
+
+\section{System Components}
+The system will be composed of the following:
+\begin{itemize}
+  \item \textbf{Microcontroller:} The microcontroller will be responsible for taking the measurements from the sensors and performing the necessary calculations and sending the results to the user interface.
+  \item \textbf{Ultrasound Sensor:} The ultrasound sensor will be used to measure the distance between the sensor and the Various objects in the environment.
+  \item \textbf{A Bluetooth Module:} The Bluetooth module will be used to send the data from the microcontroller to the user interface.
+  \item \textbf{User Interface:} A Linux-based system capable of displaying the data received from the microcontroller and displaying it in a user-friendly interface via a programmed GUI.
+  \item \textbf{Power Supply:} A power supply capable of providing the necessary power to the system.
+  \item \textbf{Gyroscope:} A gyroscope will be used to measure the orientation of the system.
+\end{itemize}
+
+\section{System Architecture}
+The system bench will be composed as follows:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Figures/Final.png}
+  \caption{System Architecture}
+  \label{fig:system_architecture}
+\end{figure}
+
+Where the microcontroller will be stored inside the box of the system and linked to the bluetooth module and the ultrasound sensors, which appear as blue boxes in Figure \ref{fig:system_architecture}.\\
+The mounting of the circuit will be done as follows:
+
+
+\section{System Implementation}
+\subsection{User Interface}
+The user interface will be implemented using Python and the PyQt5 Library, which is a Python binding for the Qt5 GUI Library. The user interface will be composed of the following:
+\begin{itemize}
+  \item \textbf{Main Window:} The main window will be the first window that the user will see when the program is launched. It will contain the following:
+  \begin{itemize}
+    \item \textbf{Connect Button:} The connect button will be used to connect to the microcontroller via Bluetooth.
+    \item \textbf{Disconnect Button:} The disconnect button will be used to disconnect from the microcontroller.
+    \item \textbf{Start Button:} The start button will be used to start the data acquisition from the microcontroller.
+    \item \textbf{Stop Button:} The stop button will be used to stop the data acquisition from the microcontroller.
+    \item \textbf{Exit Button:} The exit button will be used to exit the program.
+  \end{itemize}
+  \item \textbf{Settings Window:} The settings window will be used to set the parameters for the data acquisition from the microcontroller. It will contain the following:
+  \begin{itemize}
+    \item \textbf{Start Button:} The start button will be used to start the data acquisition from the microcontroller.
+    \item \textbf{Stop Button:} The stop button will be used to stop the data acquisition from the microcontroller.
+    \item \textbf{Exit Button:} The exit button will be used to exit the program.
+  \end{itemize}
+  \item \textbf{Data Acquisition Window:} The data acquisition window will be used to display the data acquired from the microcontroller. It will contain the following:
+  \begin{itemize}
+    \item \textbf{Start Button:} The start button will be used to start the data acquisition from the microcontroller.
+    \item \textbf{Stop Button:} The stop button will be used to stop the data acquisition from the microcontroller.
+    \item \textbf{Exit Button:} The exit button will be used to exit the program.
+  \end{itemize}
+\end{itemize}
+
+The user will be input a range for each parameter, or chose to ignore some of them, or even all of them in case of simple visualization of the data. If any system computed variable during any instant $t$ is not within the range specific by the user, it will trigger a response of LEDs and Sound Emitters which will signal that the quadcopter is not functioning as desired.
+
+\subsection{Calculations and Measurements}
+The microcontroller will be responsible for taking the measurements from the sensors and performing the necessary calculations and sending the results to the user interface. The microcontroller will be responsible for the following:
+
+\begin{itemize}
+  \item \textbf{Distance Measurement:} The distance measurement will be straightforward, the microcontroller will be automatically given the distance between the sensor and the object in front of it with the time of flight of the ultrasound signal.
+  \item \textbf{Velocity Measurement:} The velocity measurement will be done point by point to be able to draw a graph of the velocity across each axis. The velocity will be calculated straightforwadly by the taking the distance $\Delta d$ at a time $t_i$ between points $i-1$ and $i$ and dividing it by the time interval between two sent iterations.
+    \begin{equation}
+      v_i = \frac{\Delta d}{\Delta t}
+    \end{equation}  
+  \item \textbf{Acceleration Measurement:} The acceleration measurement will be done point by point to be able to draw a graph of the acceleration across each axis. The acceleration will be calculated straightforwadly by the taking the velocity $\Delta v$ at a time $t_i$between points $i-1$ and $i$ and dividing it by the time interval between two sent iterations.
+    \begin{equation}
+      a_i = \frac{\Delta v}{\Delta t}
+    \end{equation}
+  \item \textbf{Orientation Measurement:} The measurement of the orientation is a bit more complex, but by using a Gyroscope, we could be comparing the inclination of the quadcopter with a base value then calculate the error and send it to the user interface.
+\end{itemize}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, 
+minimum width=3cm, 
+minimum height=1cm,
+text centered, 
+draw=black]
+\tikzstyle{io} = [trapezium, 
+trapezium stretches=true, % A later addition
+trapezium left angle=70, 
+trapezium right angle=110, 
+minimum width=3cm, 
+minimum height=1cm, text centered, 
+draw=black]
+
+\tikzstyle{process} = [rectangle, 
+minimum width=4cm, 
+minimum height=1cm, 
+text centered, 
+text width=3cm, 
+draw=black]
+
+\tikzstyle{decision} = [diamond, 
+minimum width=2cm, 
+minimum height=0.5mm,
+text width= 8em, 
+text centered, 
+draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\subsection{Flowchart}
+\begin{figure}[H]
+\scalebox{0.8}[0.8]{
+  \begin{tikzpicture}
+
+
+
+    \node (start) [startstop] {Start};
+
+    \node (p1) [process, below of=start, yshift=-1cm] {Input of the desired ranges of parameters of interest};
+    \node (p2) [process, below of=p1, yshift= -1.5cm]{Signals are sent in predefined intervals};
+    \node (p3) [process, below of=p2, yshift= -1.5cm]{The signals are then processed};
+    \node (p4) [decision, below of=p3, yshift=-2.5cm]{Is W=0};
+    \node (p5) [decision, below of=p4, xshift=-3cm, yshift=-2.5cm]{Is $S_{p} \notin R_{u} $};
+    \node (p6) [process, below of=p5, yshift=-3cm]{W=1};
+    \node (p7) [process, left of=p5, xshift=-4.5cm]{Do nothing};
+    \node (p8) [startstop, left of=start, xshift=-2.5cm]{User end};
+    \node (p9) [decision, below of=p4,xshift=3.5cm, yshift=-2.5cm]{Is $S_{p} \in R_{u} $};
+    \node (p10) [process, below of=p9, yshift=-3cm]{W=0};
+    \node (p11) [process, left of= p9,xshift=6cm]{Do nothing};
+    \node (p12) [right of=p3, xshift=3cm]{};
+    \node (p13) [right of= p2, xshift=3cm]{};
+    \draw [arrow] (start) -- (p1);
+    \draw [arrow] (p1) -- (p2);
+    \draw [arrow] (p2) -- (p3);
+    \draw [arrow] (p3) -- (p4);
+    \draw [arrow] (p4) -- node[anchor=east] {yes} (p5);
+    \draw [arrow] (p5) -- node[anchor=east] {yes} (p6);
+    \draw [arrow] (p5) -- node[anchor=north] {no} (p7);
+    \draw [arrow] (p4) -- node[anchor=west] {no} (p9);
+    \draw [arrow] (p9) -- node[anchor=east] {yes} (p10);
+    \draw [arrow] (p9) -- node[anchor=north] {no} (p11);
+    \draw [arrow] (p10) -| (p4);
+    \draw [arrow] (p6) -|(p4);
+    \draw (p3) -- (p12);
+    \draw (p12) -- (p13);
+    \draw [arrow] (p13) -- (p2);
+
+\end{tikzpicture}
+
+}
+\end{figure}
+
+
+\section{Kalman Filter}
+The Kalman Filter is a state estimation algorithm that is used to estimate the state of a system given a set of measurements. It is used in a wide variety of applications such as robotics, navigation, and control. The Kalman Filter is a recursive algorithm that uses the previous state and the current measurement to estimate the current state. The Kalman Filter is composed of two parts, the prediction step and the update step. 
+\subsection{Prediction Step}
+The prediction step is used to predict the state of the system at the next time step. It is composed of the following:
+\begin{itemize}
+  \item \textbf{State Prediction:} The state prediction is used to predict the state of the system at the next time step. It is calculated by using the following equation:
+    \begin{equation}
+      \hat{x}_{k+1} = A\hat{x}_k + B u_k
+    \end{equation}
+  \item \textbf{Covariance Prediction:} The covariance prediction is used to predict the covariance of the system at the next time step. It is calculated by using the following equation:
+    \begin{equation}
+      P_{k+1} = A P_k A^T + Q
+    \end{equation}
+\end{itemize}
+\subsection{Update Step}
+The update step is used to update the state of the system at the current time step. It is composed of the following:
+\begin{itemize}
+  \item \textbf{Kalman Gain:} The Kalman Gain is used to calculate the optimal weighting between the prediction and the measurement. It is calculated by using the following equation:
+    \begin{equation}
+      K_k = P_{k+1} H^T (H P_{k+1} H^T + R)^{-1}
+    \end{equation}
+  \item \textbf{State Update:} The state update is used to update the state of the system at the current time step. It is calculated by using the following equation:
+    \begin{equation}
+      \hat{x}_k = \hat{x}_{k+1} + K_k (z_k - H \hat{x}_{k+1})
+    \end{equation}
+  \item \textbf{Covariance Update:} The covariance update is used to update the covariance of the system at the current time step. It is calculated by using the following equation:
+    \begin{equation}
+      P_k = (I - K_k H) P_{k+1}
+    \end{equation}
+\end{itemize}
+
+We will be using the Kalman Filter to minimize the error in the measurements of the sensors. The Kalman Filter will be used to estimate the state of the system at each time step. The state of the system will be the position of the quadcopter in the 3D space. The measurements will be the distance measurements from the sensors and the orientation of the quadcopter.
+
 
 
 \end{document}

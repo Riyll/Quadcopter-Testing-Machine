@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.10)  25 FEB 2023 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.10)  26 FEB 2023 18:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -888,104 +888,110 @@ Now handling font encoding LY ...
 Now handling font encoding LYG ...
 ... no UTF-8 mapping file for font encoding LYG
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
-) (/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
-Package: circuitikz 2022/02/04{} The CircuiTikz circuit drawing package version 1.4.6
- (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box133
+\pgfnodeparttwobox=\box134
+\pgfnodepartthreebox=\box135
+\pgfnodepartfourbox=\box136
+\pgfnodeparttwentybox=\box137
+\pgfnodepartnineteenbox=\box138
+\pgfnodeparteighteenbox=\box139
+\pgfnodepartseventeenbox=\box140
+\pgfnodepartsixteenbox=\box141
+\pgfnodepartfifteenbox=\box142
+\pgfnodepartfourteenbox=\box143
+\pgfnodepartthirteenbox=\box144
+\pgfnodeparttwelvebox=\box145
+\pgfnodepartelevenbox=\box146
+\pgfnodeparttenbox=\box147
+\pgfnodepartninebox=\box148
+\pgfnodeparteightbox=\box149
+\pgfnodepartsevenbox=\box150
+\pgfnodepartsixbox=\box151
+\pgfnodepartfivebox=\box152
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen315
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen315
-\pgfarrowlength=\dimen316
-\pgfarrowwidth=\dimen317
-\pgfarrowlinewidth=\dimen318
-) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
-File: tikzlibrarybending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
-File: pgfmodulebending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
-File: pgfmodulenonlineartransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgftransformnonlinearflatness=\dimen319
-) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
-File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@curvilinear@time@a=\dimen320
-\pgf@curvilinear@length@a=\dimen321
-\pgf@curvilinear@length@b=\dimen322
-\pgf@curvilinear@length@c=\dimen323
-\pgf@curvilinear@length@d=\dimen324
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen316
+\pgfdecoratedremainingdistance=\dimen317
+\pgfdecoratedinputsegmentcompleteddistance=\dimen318
+\pgfdecoratedinputsegmentremainingdistance=\dimen319
+\pgf@decorate@distancetomove=\dimen320
+\pgf@decorate@repeatstate=\count374
+\pgfdecorationsegmentamplitude=\dimen321
+\pgfdecorationsegmentlength=\dimen322
 )
-\pgf@arrows@the@rigidity=\dimen325
-)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count374
-\pgf@circ@count@b=\count375
-\pgf@circ@count@c=\count376
-\pgf@circ@res@up=\dimen326
-\pgf@circ@res@down=\dimen327
-\pgf@circ@res@zero=\dimen328
-\pgf@circ@res@left=\dimen329
-\pgf@circ@res@right=\dimen330
-\pgf@circ@res@other=\dimen331
-\pgf@circ@res@step=\dimen332
-\pgf@circ@res@temp=\dimen333
-\pgf@circ@Rlen=\dimen334
-\pgf@circ@scaled@Rlen=\dimen335
-\pgfstartlinewidth=\dimen336
-) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
-\ctikz@scratchbox=\box133
-) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count377
-) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen337
-) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)) (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
+\tikz@lib@dec@box=\box153
+) (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex))
+\tikz@lib@circ@count=\count375
+\tikzcircuitssizeunit=\dimen323
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-
-(/usr/share/texmf-dist/tex/latex/tools/array.sty
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen338
-\ar@mcellbox=\box134
-\extrarowheight=\dimen339
+\col@sep=\dimen324
+\ar@mcellbox=\box154
+\extrarowheight=\dimen325
 \NC@list=\toks52
 \extratabsurround=\skip75
 \backup@length=\skip76
-\ar@cellbox=\box135
+\ar@cellbox=\box155
 )
-\rotheadsize=\dimen340
-\c@nlinenum=\count378
+\rotheadsize=\dimen326
+\c@nlinenum=\count376
 \TeXr@lab=\toks53
 ) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen341
-\lightrulewidth=\dimen342
-\cmidrulewidth=\dimen343
-\belowrulesep=\dimen344
-\belowbottomsep=\dimen345
-\aboverulesep=\dimen346
-\abovetopsep=\dimen347
-\cmidrulesep=\dimen348
-\cmidrulekern=\dimen349
-\defaultaddspace=\dimen350
-\@cmidla=\count379
-\@cmidlb=\count380
-\@aboverulesep=\dimen351
-\@belowrulesep=\dimen352
-\@thisruleclass=\count381
-\@lastruleclass=\count382
-\@thisrulewidth=\dimen353
+\heavyrulewidth=\dimen327
+\lightrulewidth=\dimen328
+\cmidrulewidth=\dimen329
+\belowrulesep=\dimen330
+\belowbottomsep=\dimen331
+\aboverulesep=\dimen332
+\abovetopsep=\dimen333
+\cmidrulesep=\dimen334
+\cmidrulekern=\dimen335
+\defaultaddspace=\dimen336
+\@cmidla=\count377
+\@cmidlb=\count378
+\@aboverulesep=\dimen337
+\@belowrulesep=\dimen338
+\@thisruleclass=\count379
+\@lastruleclass=\count380
+\@thisrulewidth=\dimen339
 ) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip77
-\multirow@cntb=\count383
+\multirow@cntb=\count381
 \multirow@dima=\skip78
-\bigstrutjot=\dimen354
+\bigstrutjot=\dimen340
 ) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen355
-\TX@old@table=\dimen356
-\TX@old@col=\dimen357
-\TX@target=\dimen358
-\TX@delta=\dimen359
-\TX@cols=\count384
+\TX@col@width=\dimen341
+\TX@old@table=\dimen342
+\TX@old@col=\dimen343
+\TX@target=\dimen344
+\TX@delta=\dimen345
+\TX@cols=\count382
 \TX@ftn=\toks54
-) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+)
+(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
  (/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
@@ -993,55 +999,55 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count385
-\l__lipsum_a_int=\count386
-\l__lipsum_b_int=\count387
+\g__lipsum_par_int=\count383
+\l__lipsum_a_int=\count384
+\l__lipsum_b_int=\count385
  (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-\c@tcb@cnt@mytheo=\count388
+\c@tcb@cnt@mytheo=\count386
 runsystem(which pygmentize && touch Report.aex)...executed.
 
 runsystem(rm Report.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 92.
+LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 93.
  (/usr/share/texmf-dist/tex/latex/stix2-type1/t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 93.
  (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2.fd
 File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 92.
-LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 92.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 93.
+LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 93.
  (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2.fd
 File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1079,16 +1085,16 @@ LaTeX Font Info:    ... okay on input line 92.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count389
-\scratchdimen=\dimen360
-\scratchbox=\box136
-\nofMPsegments=\count390
-\nofMParguments=\count391
+\scratchcounter=\count387
+\scratchdimen=\dimen346
+\scratchbox=\box156
+\nofMPsegments=\count388
+\nofMParguments=\count389
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count392
-\MPscratchDim=\dimen361
-\MPnumerator=\count393
-\makeMPintoPDFobject=\count394
+\MPscratchCnt=\count390
+\MPscratchDim=\dimen347
+\MPnumerator=\count391
+\makeMPintoPDFobject=\count392
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1105,8 +1111,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `wrapfig' package detected.
-\c@lstlisting=\count395
-Package hyperref Info: Link coloring OFF on input line 92.
+\c@lstlisting=\count393
+Package hyperref Info: Link coloring OFF on input line 93.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1114,11 +1120,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count396
+\c@section@level=\count394
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
  (./Report.out) (./Report.out)
 \@outlinefile=\write6
 \openout6 = `Report.out'.
@@ -1129,8 +1135,36 @@ LaTeX Info: Redefining \nameref on input line 92.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \newpage
-               [1] (./Report.toc)
+l.120 \newpage
+               [1] (./Report.toc
+LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
+File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2ex.fd
+File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
+File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2bb.fd
+File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2cal.fd
+File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
+File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2tt.fd
+File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitions
+))
 \tf@toc=\write7
 \openout7 = `Report.toc'.
 
@@ -1138,23 +1172,43 @@ l.119 \newpage
 \tf@lof=\write8
 \openout8 = `Report.lof'.
 
- [3] [4] (./Report.aux)
+ [3]
+LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 132.
+ (/usr/share/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
+File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
+)
+<Figures/Final.png, id=116, 1481.535pt x 559.08875pt>
+File: Figures/Final.png Graphic file (type png)
+<use Figures/Final.png>
+Package pdftex.def Info: Figures/Final.png  used on input line 155.
+(pdftex.def)             Requested size: 333.46758pt x 125.84071pt.
+ [4] [5 <./Figures/Final.png>]
+Overfull \hbox (2.01341pt too wide) in paragraph at lines 196--197
+[]\T1/stix2/b/n/12 Distance Mea-sure-ment: \T1/stix2/m/n/12 The dis-tance mea-sure-ment will be straight-for-ward,
+ []
+
+[6]
+Overfull \hbox (66.00719pt too wide) in paragraph at lines 275--276
+[][] 
+ []
+
+[7] [8] (./Report.aux)
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
+(rerunfilecheck)             Checksum: 6AE7737CC1F402DDC5AE72C5BE3EFBEE;1328.
  ) 
 Here is how much of TeX's memory you used:
- 51480 strings out of 478238
- 1148795 string characters out of 5850456
- 1789521 words of memory out of 5000000
- 69062 multiletter control sequences out of 15000+600000
- 541594 words of font info for 41 fonts, out of 8000000 for 9000
+ 39792 strings out of 478238
+ 788865 string characters out of 5850456
+ 1199254 words of memory out of 5000000
+ 57336 multiletter control sequences out of 15000+600000
+ 574224 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,96p,468b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1sc.enc}</usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb>
-Output written on Report.pdf (5 pages, 309177 bytes).
+ 99i,10n,96p,559b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1sc.enc}</usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb>
+Output written on Report.pdf (9 pages, 635188 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 
