@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.10)  26 FEB 2023 18:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.10)  26 FEB 2023 20:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -783,105 +783,179 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks51
 ) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/usr/share/texmf-dist/tex/latex/stix2-type1/stix2.sty
-Package: stix2 2021/01/14 v2.0.2-latex STIX Two fonts support package
- (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
+) (/usr/share/texmf/tex/latex/MinionPro/MinionPro.sty
+Package: MinionPro 2012/08/03 v2.3 MinionPro support for LaTeX
+ (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+ (/usr/share/texmf/tex/latex/MinionPro/otfontdef.sty
+Package: otfontdef 2005/06/04 v0.1e OpenType font definition
 )
-Now handling font encoding LS1 ...
-... no UTF-8 mapping file for font encoding LS1
-Now handling font encoding LS2 ...
-... no UTF-8 mapping file for font encoding LS2
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 78.
-LaTeX Font Info:    Encoding `OML' has changed to `LS1' for symbol font
-(Font)              `letters' in the math version `normal' on input line 78.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> LS1/stix2/m/it on input line 78.
-LaTeX Font Info:    Encoding `OML' has changed to `LS1' for symbol font
-(Font)              `letters' in the math version `bold' on input line 78.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> LS1/stix2/m/it on input line 78.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 79.
-LaTeX Font Info:    Encoding `OT1' has changed to `LS1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 79.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> LS1/stix2/m/n on input line 79.
-LaTeX Font Info:    Encoding `OT1' has changed to `LS1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 79.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> LS1/stix2/m/n on input line 79.
-\symbold-operators=\mathgroup4
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 81.
-LaTeX Font Info:    Encoding `OMS' has changed to `LS1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 81.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> LS1/stix2scr/m/n on input line 81.
-LaTeX Font Info:    Encoding `OMS' has changed to `LS1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 81.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> LS1/stix2scr/m/n on input line 81.
-\symsymbols2=\mathgroup5
-\symsymbols3=\mathgroup6
-\symsymbols4=\mathgroup7
-\symintegrals=\mathgroup8
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 86.
-LaTeX Font Info:    Encoding `OMX' has changed to `LS2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 86.
+\Mn@option@normalsize=\dimen315
+Package MinionPro-FontDef Info: Configuration: smallfamily, noopticals, normalsize=12.0pt on input line 52.
+\Mn@config@cnt=\count374
+ (/usr/share/texmf-dist/tex/generic/fltpoint/fltpoint.sty
+Package: fltpoint 2004/11/12 v1.1b floating point arithmetic
+ (/usr/share/texmf-dist/tex/generic/fltpoint/fltpoint.tex
+\fp@loopcount=\count375
+\fp@loopcountii=\count376
+\fp@result=\count377
+\fp@carryover=\count378
+\fp@tempcount=\count379
+\fp@tempcountii=\count380
+))
+\Mn@fontdimen=\dimen316
+) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
+Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+ (/usr/share/texmf-dist/tex/latex/amsfonts/eufrak.sty
+Package: eufrak 2009/06/22 v3.00 Euler Fraktur fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuFrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 39.
+)
+LaTeX Info: Redefining \dagger on input line 84.
+LaTeX Info: Redefining \ddagger on input line 84.
+LaTeX Info: Redefining \mathparagraph on input line 84.
+LaTeX Info: Redefining \mathsection on input line 84.
+LaTeX Info: Redefining \mathdollar on input line 84.
+LaTeX Info: Redefining \mathsterling on input line 84.
+LaTeX Info: Redefining \Re on input line 84.
+LaTeX Info: Redefining \Im on input line 84.
+\symMnSyA=\mathgroup4
+\symMnSyB=\mathgroup5
+\symMnSyC=\mathgroup6
+\symMnSyD=\mathgroup7
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> LS2/stix2ex/m/n on input line 86.
-LaTeX Font Info:    Encoding `OMX' has changed to `LS2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 86.
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> LS2/stix2ex/m/n on input line 86.
-\symarrows1=\mathgroup9
-\symarrows2=\mathgroup10
-\symarrows3=\mathgroup11
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  LS1/stix2/m/it --> LS1/stix2/b/it on input line 90.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  LS1/stix2/m/n --> LS1/stix2/b/n on input line 91.
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 120.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  LS1/stix2scr/m/n --> LS1/stix2scr/b/n on input line 92.
-LaTeX Font Info:    Overwriting symbol font `symbols2' in version `bold'
-(Font)                  LS1/stix2frak/m/n --> LS1/stix2frak/b/n on input line 93.
-LaTeX Font Info:    Overwriting symbol font `symbols3' in version `bold'
-(Font)                  LS1/stix2bb/m/n --> LS1/stix2bb/b/n on input line 94.
-LaTeX Font Info:    Overwriting symbol font `symbols4' in version `bold'
-(Font)                  LS1/stix2bb/m/it --> LS1/stix2bb/b/it on input line 95.
-LaTeX Font Info:    Overwriting symbol font `integrals' in version `bold'
-(Font)                  LS2/stix2cal/m/n --> LS2/stix2cal/b/n on input line 96.
+(Font)                  OMS/cmsy/b/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `MnSyA' in version `bold'
+(Font)                  U/MnSymbolA/m/n --> U/MnSymbolA/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `MnSyB' in version `bold'
+(Font)                  U/MnSymbolB/m/n --> U/MnSymbolB/b/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `MnSyC' in version `bold'
+(Font)                  U/MnSymbolC/m/n --> U/MnSymbolC/b/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `MnSyD' in version `bold'
+(Font)                  U/MnSymbolD/m/n --> U/MnSymbolD/b/n on input line 124.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LS2/stix2ex/m/n --> LS2/stix2ex/b/n on input line 97.
-LaTeX Font Info:    Overwriting symbol font `arrows1' in version `bold'
-(Font)                  LS1/stix2sf/m/n --> LS1/stix2sf/b/n on input line 98.
-LaTeX Font Info:    Overwriting symbol font `arrows2' in version `bold'
-(Font)                  LS1/stix2sf/m/it --> LS1/stix2sf/b/it on input line 99.
-LaTeX Font Info:    Overwriting symbol font `arrows3' in version `bold'
-(Font)                  LS2/stix2tt/m/n --> LS2/stix2tt/b/n on input line 100.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 101.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 107.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 109.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 110.
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 226.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 697.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 698.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 699.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 700.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 701.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 702.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 703.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 704.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 706.
-LaTeX Font Info:    Redeclaring math accent \check on input line 707.
-LaTeX Font Info:    Redeclaring math accent \vec on input line 715.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 727.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 728.
-LaTeX Info: Redefining \vdots on input line 1517.
-LaTeX Info: Redefining \cdots on input line 1521.
-LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 1977.
-LaTeX Info: Redefining \not on input line 2141.
-) (/usr/share/texmf-dist/tex/latex/yfonts/yfonts.sty
+(Font)                  OMX/MnSymbolE/m/n --> OMX/MnSymbolE/b/n on input line 125.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  U/MnSymbolF/m/n --> U/MnSymbolF/b/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 241.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  OMS/MnSymbolS/m/n --> OMS/MnSymbolS/b/n on input line 241.
+LaTeX Info: Redefining \longrightarrow on input line 548.
+LaTeX Info: Redefining \longleftarrow on input line 549.
+LaTeX Info: Redefining \longleftrightarrow on input line 550.
+LaTeX Info: Redefining \Longrightarrow on input line 551.
+LaTeX Info: Redefining \Longleftarrow on input line 552.
+LaTeX Info: Redefining \Longleftrightarrow on input line 553.
+LaTeX Info: Redefining \longmapsto on input line 554.
+LaTeX Info: Redefining \vdots on input line 868.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1721.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1722.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1723.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1724.
+LaTeX Info: Redefining \downbracefill on input line 1799.
+LaTeX Info: Redefining \upbracefill on input line 1800.
+LaTeX Info: Redefining \overbrace on input line 1819.
+LaTeX Info: Redefining \underbrace on input line 1820.
+LaTeX Info: Redefining \surd on input line 1843.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 181.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 181.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> T1/MinionPro-OsF/m/n on input line 181.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 181.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/MinionPro-OsF/m/n on input line 181.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 182.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/MinionPro-TOsF/m/it on input line 182.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/MinionPro-TOsF/m/it on input line 182.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-OsF/eb/n on input line 183.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/eb/it on input line 184.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/MinionPro-OsF/eb/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/MinionPro-OsF/eb/n on input line 185.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 186.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/MinionPro-OsF/m/it on input line 186.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/MinionPro-OsF/m/it on input line 186.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/MinionPro-OsF/m/it --> T1/MinionPro-OsF/eb/it on input line 187.
+\c@mv@tabular=\count381
+LaTeX Font Info:    Overwriting symbol font `operators' in version `tabular'
+(Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-TOsF/m/n on input line 189.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `tabular'
+(Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/m/it on input line 190.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `tabular'
+(Font)                  OT1/cmr/m/it --> T1/MinionPro-TOsF/m/it on input line 191.
+\c@mv@boldtabular=\count382
+LaTeX Font Info:    Overwriting symbol font `operators' in version `boldtabular'
+(Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-TOsF/eb/n on input line 194.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `boldtabular'
+(Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/eb/it on input line 195.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldtabular'
+(Font)                  OT1/cmr/m/it --> T1/MinionPro-TOsF/eb/it on input line 196.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 197.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 198.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 199.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 200.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 201.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 202.
+LaTeX Font Info:    Redeclaring math accent \check on input line 203.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 204.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 205.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 206.
+ (/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 515.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 517.
+LaTeX Font Info:    Redeclaring math symbol \ell on input line 519.
+LaTeX Font Info:    Setting MinionPro-LF sub-encoding to TS1/1 on input line 539.
+LaTeX Font Info:    Setting MinionPro-TLF sub-encoding to TS1/1 on input line 540.
+LaTeX Font Info:    Setting MinionPro-OsF sub-encoding to TS1/1 on input line 541.
+LaTeX Font Info:    Setting MinionPro-TOsF sub-encoding to TS1/1 on input line 542.
+LaTeX Info: Redefining \LaTeX on input line 615.
+LaTeX Font Info:    Trying to load font information for T1+MinionPro-OsF on input line 647.
+ (/usr/share/texmf/tex/latex/MinionPro/T1MinionPro-OsF.fd
+File: T1MinionPro-OsF.fd 2005/01/23 v2.0 font definitions for T1/MinionPro-OsF.
+ (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+))) (/usr/share/texmf-dist/tex/latex/yfonts/yfonts.sty
 Package: yfonts 2019/04/04 v1.4 (WaS&NP)
 Now handling font encoding LY ...
 ... no UTF-8 mapping file for font encoding LY
@@ -920,134 +994,209 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen315
+\arrowsize=\dimen317
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen316
-\pgfdecoratedremainingdistance=\dimen317
-\pgfdecoratedinputsegmentcompleteddistance=\dimen318
-\pgfdecoratedinputsegmentremainingdistance=\dimen319
-\pgf@decorate@distancetomove=\dimen320
-\pgf@decorate@repeatstate=\count374
-\pgfdecorationsegmentamplitude=\dimen321
-\pgfdecorationsegmentlength=\dimen322
+\pgfdecoratedcompleteddistance=\dimen318
+\pgfdecoratedremainingdistance=\dimen319
+\pgfdecoratedinputsegmentcompleteddistance=\dimen320
+\pgfdecoratedinputsegmentremainingdistance=\dimen321
+\pgf@decorate@distancetomove=\dimen322
+\pgf@decorate@repeatstate=\count383
+\pgfdecorationsegmentamplitude=\dimen323
+\pgfdecorationsegmentlength=\dimen324
 )
 \tikz@lib@dec@box=\box153
 ) (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex))
-\tikz@lib@circ@count=\count375
-\tikzcircuitssizeunit=\dimen323
-) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+\tikz@lib@circ@count=\count384
+\tikzcircuitssizeunit=\dimen325
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
-Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
- (/usr/share/texmf-dist/tex/latex/tools/array.sty
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex))) (/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2022/02/04{} The CircuiTikz circuit drawing package version 1.4.6
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen326
+\pgfarrowlength=\dimen327
+\pgfarrowwidth=\dimen328
+\pgfarrowlinewidth=\dimen329
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
+File: pgfmodulebending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgftransformnonlinearflatness=\dimen330
+) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@curvilinear@time@a=\dimen331
+\pgf@curvilinear@length@a=\dimen332
+\pgf@curvilinear@length@b=\dimen333
+\pgf@curvilinear@length@c=\dimen334
+\pgf@curvilinear@length@d=\dimen335
+)
+\pgf@arrows@the@rigidity=\dimen336
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@count@a=\count385
+\pgf@circ@count@b=\count386
+\pgf@circ@count@c=\count387
+\pgf@circ@res@up=\dimen337
+\pgf@circ@res@down=\dimen338
+\pgf@circ@res@zero=\dimen339
+\pgf@circ@res@left=\dimen340
+\pgf@circ@res@right=\dimen341
+\pgf@circ@res@other=\dimen342
+\pgf@circ@res@step=\dimen343
+\pgf@circ@res@temp=\dimen344
+\pgf@circ@Rlen=\dimen345
+\pgf@circ@scaled@Rlen=\dimen346
+\pgfstartlinewidth=\dimen347
+) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
+\ctikz@scratchbox=\box154
+) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
+(/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count388
+) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen348
+) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex) (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2022-04-04 v3.0.50 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen349
+\l__siunitx_angle_marker_box=\box155
+\l__siunitx_angle_unit_box=\box156
+\l__siunitx_compound_count_int=\count389
+ (/usr/share/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count390
+\l__siunitx_number_min_decimal_int=\count391
+\l__siunitx_number_min_integer_int=\count392
+\l__siunitx_number_round_precision_int=\count393
+\l__siunitx_number_group_minimum_int=\count394
+\l__siunitx_table_tmp_box=\box157
+\l__siunitx_table_tmp_dim=\dimen350
+\l__siunitx_table_column_width_dim=\dimen351
+\l__siunitx_table_integer_box=\box158
+\l__siunitx_table_decimal_box=\box159
+\l__siunitx_table_before_box=\box160
+\l__siunitx_table_after_box=\box161
+\l__siunitx_table_before_dim=\dimen352
+\l__siunitx_table_carry_dim=\dimen353
+\l__siunitx_unit_tmp_int=\count395
+\l__siunitx_unit_position_int=\count396
+\l__siunitx_unit_total_int=\count397
+ (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+) (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen324
-\ar@mcellbox=\box154
-\extrarowheight=\dimen325
+\col@sep=\dimen354
+\ar@mcellbox=\box162
+\extrarowheight=\dimen355
 \NC@list=\toks52
 \extratabsurround=\skip75
 \backup@length=\skip76
-\ar@cellbox=\box155
-)
-\rotheadsize=\dimen326
-\c@nlinenum=\count376
+\ar@cellbox=\box163
+))) (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen356
+\c@nlinenum=\count398
 \TeXr@lab=\toks53
 ) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen327
-\lightrulewidth=\dimen328
-\cmidrulewidth=\dimen329
-\belowrulesep=\dimen330
-\belowbottomsep=\dimen331
-\aboverulesep=\dimen332
-\abovetopsep=\dimen333
-\cmidrulesep=\dimen334
-\cmidrulekern=\dimen335
-\defaultaddspace=\dimen336
-\@cmidla=\count377
-\@cmidlb=\count378
-\@aboverulesep=\dimen337
-\@belowrulesep=\dimen338
-\@thisruleclass=\count379
-\@lastruleclass=\count380
-\@thisrulewidth=\dimen339
+\heavyrulewidth=\dimen357
+\lightrulewidth=\dimen358
+\cmidrulewidth=\dimen359
+\belowrulesep=\dimen360
+\belowbottomsep=\dimen361
+\aboverulesep=\dimen362
+\abovetopsep=\dimen363
+\cmidrulesep=\dimen364
+\cmidrulekern=\dimen365
+\defaultaddspace=\dimen366
+\@cmidla=\count399
+\@cmidlb=\count400
+\@aboverulesep=\dimen367
+\@belowrulesep=\dimen368
+\@thisruleclass=\count401
+\@lastruleclass=\count402
+\@thisrulewidth=\dimen369
 ) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip77
-\multirow@cntb=\count381
+\multirow@cntb=\count403
 \multirow@dima=\skip78
-\bigstrutjot=\dimen340
+\bigstrutjot=\dimen370
 ) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen341
-\TX@old@table=\dimen342
-\TX@old@col=\dimen343
-\TX@target=\dimen344
-\TX@delta=\dimen345
-\TX@cols=\count382
+\TX@col@width=\dimen371
+\TX@old@table=\dimen372
+\TX@old@col=\dimen373
+\TX@target=\dimen374
+\TX@delta=\dimen375
+\TX@cols=\count404
 \TX@ftn=\toks54
-)
-(/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
+) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
  (/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex)) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-)
+) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex)) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count383
-\l__lipsum_a_int=\count384
-\l__lipsum_b_int=\count385
+\g__lipsum_par_int=\count405
+\l__lipsum_a_int=\count406
+\l__lipsum_b_int=\count407
  (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-\c@tcb@cnt@mytheo=\count386
+\c@tcb@cnt@mytheo=\count408
 runsystem(which pygmentize && touch Report.aex)...executed.
 
 runsystem(rm Report.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 93.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/t1stix2.fd
-File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
-) (./Report.aux)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 94.
+ (./Report.aux
+
+LaTeX Warning: Label `fig:system_architecture' multiply defined.
+
+)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 93.
-LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 93.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2.fd
-File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
-)
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 93.
-LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 93.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2.fd
-File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
-)
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1085,16 +1234,16 @@ LaTeX Font Info:    ... okay on input line 93.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count387
-\scratchdimen=\dimen346
-\scratchbox=\box156
-\nofMPsegments=\count388
-\nofMParguments=\count389
+\scratchcounter=\count409
+\scratchdimen=\dimen376
+\scratchbox=\box164
+\nofMPsegments=\count410
+\nofMParguments=\count411
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count390
-\MPscratchDim=\dimen347
-\MPnumerator=\count391
-\makeMPintoPDFobject=\count392
+\MPscratchCnt=\count412
+\MPscratchDim=\dimen377
+\MPnumerator=\count413
+\makeMPintoPDFobject=\count414
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1111,8 +1260,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `wrapfig' package detected.
-\c@lstlisting=\count393
-Package hyperref Info: Link coloring OFF on input line 93.
+\c@lstlisting=\count415
+Package hyperref Info: Link coloring OFF on input line 94.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1120,95 +1269,87 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count416
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
  (./Report.out) (./Report.out)
 \@outlinefile=\write6
 \openout6 = `Report.out'.
 
+ (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 94.
+<Figures/AUI.png, id=95, 332.442pt x 267.399pt>
+File: Figures/AUI.png Graphic file (type png)
+<use Figures/AUI.png>
+Package pdftex.def Info: Figures/AUI.png  used on input line 113.
+(pdftex.def)             Requested size: 208.41644pt x 167.63806pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.120 \newpage
-               [1] (./Report.toc
-LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
-File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2ex.fd
-File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
-File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2bb.fd
-File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2cal.fd
-File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
-File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input line 5.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ls2stix2tt.fd
-File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitions
-))
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/AUI.png>] (./Report.toc
+LaTeX Font Info:    Trying to load font information for OML+MinionPro-TOsF on input line 5.
+ (/usr/share/texmf/tex/latex/MinionPro/OMLMinionPro-TOsF.fd
+File: OMLMinionPro-TOsF.fd 2005/01/23 v2.0 font definitions for OML/MinionPro-TOsF.
+ (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+)))
 \tf@toc=\write7
 \openout7 = `Report.toc'.
 
- [2] (./Report.lof)
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.122 \newpage
+               [1] (./Report.lof)
 \tf@lof=\write8
 \openout8 = `Report.lof'.
 
- [3]
-LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 132.
- (/usr/share/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
-File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
-)
-<Figures/Final.png, id=116, 1481.535pt x 559.08875pt>
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+MinionPro-OsF on input line 131.
+ (/usr/share/texmf/tex/latex/MinionPro/TS1MinionPro-OsF.fd
+File: TS1MinionPro-OsF.fd 2005/01/23 v2.0 font definitions for TS1/MinionPro-OsF.
+ (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+))
+<Figures/Final.png, id=140, 1142.2675pt x 640.3925pt>
 File: Figures/Final.png Graphic file (type png)
 <use Figures/Final.png>
-Package pdftex.def Info: Figures/Final.png  used on input line 155.
-(pdftex.def)             Requested size: 333.46758pt x 125.84071pt.
- [4] [5 <./Figures/Final.png>]
-Overfull \hbox (2.01341pt too wide) in paragraph at lines 196--197
-[]\T1/stix2/b/n/12 Distance Mea-sure-ment: \T1/stix2/m/n/12 The dis-tance mea-sure-ment will be straight-for-ward,
- []
-
-[6]
-Overfull \hbox (66.00719pt too wide) in paragraph at lines 275--276
+Package pdftex.def Info: Figures/Final.png  used on input line 173.
+(pdftex.def)             Requested size: 333.46758pt x 186.95006pt.
+ [3] [4 <./Figures/Final.png>] [5] [6]
+Overfull \hbox (77.23474pt too wide) in paragraph at lines 389--390
 [][] 
  []
 
-[7] [8] (./Report.aux)
+[7] [8]
+Overfull \hbox (12.02649pt too wide) in paragraph at lines 434--444
+[][] 
+ []
+
+[9] [10] (./Report.bbl) [11] (./Report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 6AE7737CC1F402DDC5AE72C5BE3EFBEE;1328.
+(rerunfilecheck)             Checksum: 885989F65F788F09C5A46EDFDD69D001;1737.
  ) 
 Here is how much of TeX's memory you used:
- 39792 strings out of 478238
- 788865 string characters out of 5850456
- 1199254 words of memory out of 5000000
- 57336 multiletter control sequences out of 15000+600000
- 574224 words of font info for 80 fonts, out of 8000000 for 9000
+ 59704 strings out of 478238
+ 1382610 string characters out of 5850456
+ 2001593 words of memory out of 5000000
+ 77053 multiletter control sequences out of 15000+600000
+ 844134 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,96p,559b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1sc.enc}</usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb>
-Output written on Report.pdf (9 pages, 635188 bytes).
+ 99i,10n,96p,559b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_kbk33c.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_jidws5.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_so5ulq.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_nv7crj.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_guwirv.enc}</usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-Bold.pfb></usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-It.pfb></usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb>
+Output written on Report.pdf (12 pages, 361333 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

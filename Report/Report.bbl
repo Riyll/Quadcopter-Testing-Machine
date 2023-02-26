@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{Kim2011Kalman}
+Phil Kim and Lynn Huh.
+\newblock {\em Kalman filter for beginners: With {MATLAB} examples}.
+\newblock CreateSpace, 2011.
+\newblock [Online; accessed 2023-02-26].
+
+\bibitem{Oppenheim2013Discrete}
+Alan~V. Oppenheim and Ronald~W. Schafer.
+\newblock {\em Discrete-{Time} {Signal} {Processing}}.
+\newblock jul 23 2013.
+\newblock [Online; accessed 2023-02-26].
+
+\end{thebibliography}

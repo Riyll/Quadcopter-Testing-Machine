@@ -28,11 +28,12 @@
 \usepackage[utf8]{inputenc}         % Required for inputting international characters
 \usepackage[T1]{fontenc}            % Output font encoding for international characters
 
-\usepackage{stix2}
+\usepackage{MinionPro}
 
 \usepackage{yfonts}                 % The yfonts package is used for the beautiful first Capital letter of a Paragraph
 \usepackage{tikz}
-\usetikzlibrary{automata, positioning, arrows, circuits, shapes.geometric}
+\usetikzlibrary{automata, positioning, arrows, circuits, shapes.geometric, shapes}
+\usepackage[siunitx,european,american]{circuitikz}
 
 %% Packages for Tables
 \usepackage{makecell}
@@ -100,22 +101,20 @@
     \vspace*{\baselineskip}
     \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
     \rule{\textwidth}{0.4pt}\\[\baselineskip]
-    {\LARGE Testing Board for Quadcoptor Parameters Visualization and Stability Analysis using Laser Detection and Ranging} 
+    {\LARGE Testing Board for Quadcoptor Parameters Visualization and Stability Analysis using Ultrasonic and Gyroscope Detection} 
     \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
     \rule{\textwidth}{1.6pt}\\[\baselineskip]
     \scshape
-    Supervised by \\[\baselineskip] {\Large Dr. Yassine SALEH-ALJ}\par
+    Supervised by \\[\baselineskip] {\Large Dr. Yassine SALIH-ALJ}\par
     \vspace*{2\baselineskip}
     Edited by \\[\baselineskip]
     {\Large Idriss Sefrioui \\ Nadime Lhassani \\ Houssam Saber\par}
     \vfill
+    \includegraphics[width=0.5\textwidth]{Figures/AUI.png}\\
     {\scshape Spring 2023} \\
     {\large Al Akhawayn University in Ifrane}\par
   \end{titlepage}
 
-\begin{abstract}
-  Whatever the abstract might be.
-\end{abstract}
 
 \newpage
 
@@ -148,6 +147,25 @@ The system will be composed of the following:
   \item \textbf{Gyroscope:} A gyroscope will be used to measure the orientation of the system.
 \end{itemize}
 
+The following Table will specify the choice of each component.
+\begin{table}
+  \centering
+  \caption{System Components}
+  \label{tab:system_components}
+  \begin{tabular}{lcc}
+    \toprule
+    \textbf{Component} & \textbf{Choice} & \textbf{Purchase Link} \\
+    \midrule
+    Microcontroller & STM32F401RE & \href{https://www.amazon.com/gp/product/B06WGZB2N4/ref=ox_sc_act_title_1?smid=AFLYC5O31PGVX&psc=1}{Here}  \\
+    Ultrasound Sensor & VL53L1X Time-of-Flight & \href{https://www.amazon.com/gp/product/B01EV70C78/ref=ox_sc_act_title_3?smid=A2WWHQ25ENKVJ1&psc=1}{Here}  \\
+    Bluetooth Module & HM-10 & \href{https://www.amazon.com/gp/product/B06WGZB2N4/ref=ox_sc_act_title_1?smid=AFLYC5O31PGVX&psc=1}{Here}  \\
+    Power Supply & 5V 2A Power Supply & Already Available \\
+    Gyroscope & MPU-6050 & \href{https://www.amazon.com/gp/product/B0B793846N/ref=ox_sc_act_title_2?smid=A1YZW40LYQY3L1&psc=1}{Here} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
 \section{System Architecture}
 The system bench will be composed as follows:
 \begin{figure}[H]
@@ -157,8 +175,45 @@ The system bench will be composed as follows:
   \label{fig:system_architecture}
 \end{figure}
 
-Where the microcontroller will be stored inside the box of the system and linked to the bluetooth module and the ultrasound sensors, which appear as blue boxes in Figure \ref{fig:system_architecture}.\\
+Where the microcontroller will be stored inside the box of the system and linked to the bluetooth module and the ultrasound sensors, which appear as blue boxes in Figure \ref{fig:system_architecture}, with the Gyroscope appearing with a Red Color.\\
 The mounting of the circuit will be done as follows:
+\begin{figure}[H]
+  \centering
+
+\tikzstyle{icdev}=[draw, text width=6em, minimum height=8em]
+
+\begin{tikzpicture}[every node/.style = {font = \footnotesize},european]
+
+    \node (digichip) [icdev,xshift=3cm,yshift=2cm] {};
+    \draw (3.25,3.5) node(a1)[left]{$V_{cc}$};
+
+    \draw (3.25,0.5) node(a2)[left]{GND};
+    \draw (2.5,1.25) node(a3)[left]{PA4};
+    \draw (2.5,1.75) node(a4)[left]{PA3};
+    \draw (2.5,2.25) node(a5)[left]{PA2};
+    \draw (2.5,2.75) node(a6)[left]{PA1};
+    \draw (3.2,1.75) node(a7)[right]{OUT};
+    \draw (6.5,1.75) node(a8)[rectangle]{HM-10};
+    \draw (0.5,2.75) node(a9)[left]{VL53L1X};
+    \draw (0.5,2.25) node(a10)[left]{VL53L1X};
+    \draw (0.5,1.75) node(a11)[left]{VL53L1X};
+    \draw (0.5,1.25) node(a12)[left]{MPU650};
+    \draw (2.75,-0.5) node(a13)[ground]{};
+    \draw (3,4.5) node(a14)[left]{};
+    \draw (a13) -- (a2);
+    \draw (a14) -- (a1);
+    \draw (a3) -- (a12);
+    \draw (a4) -- (a11);
+    \draw (a5) -- (a10);
+    \draw (a6) -- (a9);
+    \draw (a7) -- (a8);
+
+\end{tikzpicture}
+
+  \caption{Microcontroller Circuit}
+  \label{fig:system_architecture}
+\end{figure}
+Only the pins that are used in the circuit have been shown in the Figure.
 
 
 \section{System Implementation}
@@ -187,7 +242,7 @@ The user interface will be implemented using Python and the PyQt5 Library, which
   \end{itemize}
 \end{itemize}
 
-The user will be input a range for each parameter, or chose to ignore some of them, or even all of them in case of simple visualization of the data. If any system computed variable during any instant $t$ is not within the range specific by the user, it will trigger a response of LEDs and Sound Emitters which will signal that the quadcopter is not functioning as desired.
+The user will be able to input a range for each parameter, or chose to ignore some of them, or even all of them in case of simple visualization of the data. If any system computed variable during any instant $t$ is not within the range specific by the user, it will trigger a response of LEDs and Sound Emitters which will signal that the quadcopter is not functioning as desired.
 
 \subsection{Calculations and Measurements}
 The microcontroller will be responsible for taking the measurements from the sensors and performing the necessary calculations and sending the results to the user interface. The microcontroller will be responsible for the following:
@@ -204,6 +259,56 @@ The microcontroller will be responsible for taking the measurements from the sen
     \end{equation}
   \item \textbf{Orientation Measurement:} The measurement of the orientation is a bit more complex, but by using a Gyroscope, we could be comparing the inclination of the quadcopter with a base value then calculate the error and send it to the user interface.
 \end{itemize}
+
+\subsection{Control System}
+The emission of the hyper-sound waves will be controlled via a Discrete Proportional Controller, which is a simple controller that is used to control the frequency of the sound waves emitted by the sound emitters. The controller will be designed as follows:
+\begin{equation}
+  u(n) = K_p e(n)
+\end{equation}
+Where $u(n)$ is the control signal, $K_p$ is the proportional gain, and $e(n)$ is the error signal \cite{Oppenheim2013Discrete}. The error signal will be calculated as follows:
+\begin{equation}
+  e(n) = r(n) - y(n)
+\end{equation}
+Where $r(n)$ is the reference signal, and $y(n)$ is the output signal. The reference signal will be the desired frequency of the sound waves, and the output signal will be the frequency of the sound waves emitted by the sound emitters. The controller will be implemented in the microcontroller, and the microcontroller will be responsible for sending the control signal to the sound emitters.
+\tikzstyle{block} = [draw, fill=white, rectangle, 
+    minimum height=3em, minimum width=6em]
+\tikzstyle{sum} = [draw, fill=white, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\begin{figure}[H]
+  \centering
+ \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+
+    \node [input, name=input] {};
+    \node [sum, right of=input] (sum) {-};
+    \node [block, right of=sum] (controller) {Controller};
+    \node [block, right of=controller, pin={[pinstyle]},
+            node distance=3cm] (system) {System};
+
+    \draw [->] (controller) -- node[name=u] {$u$} (system);
+    \node [output, right of=system] (output) {};
+    %\node [block, below of=u] (measurements) {Measurements};
+    \coordinate [below of=u] (measurements) {};
+
+    \draw [draw,->] (input) -- node {$r$} (sum);
+    \draw [->] (sum) -- node {$e$} (controller);
+    \draw [->] (system) -- node [name=y] {$y$}(output);
+    %\draw [->] (y) |- (measurements);
+    \draw [-] (y) |- (measurements);
+    %\draw [->] (measurements) -| node[pos=0.99] {$-$} 
+    \draw [->] (measurements) -| %node[pos=1.00] {$-$} 
+        node [near end] {$y$} (sum);
+        
+    %\draw [->] 
+  \end{tikzpicture}
+  \caption{Block Diagram of the Control System}
+\end{figure}
+The controller is planned to be completed before the next phase of the project.
+
+
+
 
 \tikzstyle{startstop} = [rectangle, rounded corners, 
 minimum width=3cm, 
@@ -236,15 +341,15 @@ draw=black]
 \begin{figure}[H]
 \scalebox{0.8}[0.8]{
   \begin{tikzpicture}
-
-
-
+    
+    
+      
     \node (start) [startstop] {Start};
-
+  
     \node (p1) [process, below of=start, yshift=-1cm] {Input of the desired ranges of parameters of interest};
     \node (p2) [process, below of=p1, yshift= -1.5cm]{Signals are sent in predefined intervals};
-    \node (p3) [process, below of=p2, yshift= -1.5cm]{The signals are then processed};
-    \node (p4) [decision, below of=p3, yshift=-2.5cm]{Is W=0};
+    \node (p3) [process, below of=p2, yshift= -6.5cm]{The signals are then processed};
+    \node (p4) [decision, below of=p3, yshift=-3.5cm]{Is W=0};
     \node (p5) [decision, below of=p4, xshift=-3cm, yshift=-2.5cm]{Is $S_{p} \notin R_{u} $};
     \node (p6) [process, below of=p5, yshift=-3cm]{W=1};
     \node (p7) [process, left of=p5, xshift=-4.5cm]{Do nothing};
@@ -254,9 +359,12 @@ draw=black]
     \node (p11) [process, left of= p9,xshift=6cm]{Do nothing};
     \node (p12) [right of=p3, xshift=3cm]{};
     \node (p13) [right of= p2, xshift=3cm]{};
+    \node (p14) [decision, below of=p2, yshift=-2.5cm]{Did the user input stop?};
+    \node (p15) [process, left of =p3, xshift= -3.5cm]{Send parameters to the interface };
+    \node (p16) [process, left of =p15, xshift= -3.5cm]{Display parameters on the interface};
     \draw [arrow] (start) -- (p1);
     \draw [arrow] (p1) -- (p2);
-    \draw [arrow] (p2) -- (p3);
+    \draw [arrow] (p2) -- (p14);
     \draw [arrow] (p3) -- (p4);
     \draw [arrow] (p4) -- node[anchor=east] {yes} (p5);
     \draw [arrow] (p5) -- node[anchor=east] {yes} (p6);
@@ -269,15 +377,23 @@ draw=black]
     \draw (p3) -- (p12);
     \draw (p12) -- (p13);
     \draw [arrow] (p13) -- (p2);
+    \draw [arrow] (p14) -| node[anchor=north] {yes} (p8);
+    \draw [arrow] (p13) -- (p2);
+    \draw [arrow] (p14) --node[anchor=west] {no} (p3);
+    \draw [arrow] (p3) -- (p15);
+    \draw [arrow] (p15) -- (p16);
 
-\end{tikzpicture}
+
+  \end{tikzpicture}
 
 }
+
+  \caption{Algorithm of the system}
 \end{figure}
 
 
 \section{Kalman Filter}
-The Kalman Filter is a state estimation algorithm that is used to estimate the state of a system given a set of measurements. It is used in a wide variety of applications such as robotics, navigation, and control. The Kalman Filter is a recursive algorithm that uses the previous state and the current measurement to estimate the current state. The Kalman Filter is composed of two parts, the prediction step and the update step. 
+The Kalman Filter is a state estimation algorithm that is used to estimate the state of a system given a set of measurements. It is used in a wide variety of applications such as robotics, navigation, and control. The Kalman Filter is a recursive algorithm that uses the previous state and the current measurement to estimate the current state. The Kalman Filter is composed of two parts, the prediction step and the update step.\cite{Kim2011Kalman} 
 \subsection{Prediction Step}
 The prediction step is used to predict the state of the system at the next time step. It is composed of the following:
 \begin{itemize}
@@ -309,6 +425,31 @@ The update step is used to update the state of the system at the current time st
 
 We will be using the Kalman Filter to minimize the error in the measurements of the sensors. The Kalman Filter will be used to estimate the state of the system at each time step. The state of the system will be the position of the quadcopter in the 3D space. The measurements will be the distance measurements from the sensors and the orientation of the quadcopter.
 
+The Kalman Filter is planned to be completed before the end of the next Phase.
+
+\section{Conclusion and Future Work}
+  The theoretical part of the project is still ongoing, but as it makes up the bulk of the project, and it will offer us a fruitful learning experience concerning both Kalman Filters and Discrete Time Control Systems, it is expected that the physical implementation of the project will start by the 10th of March, and will mostly be completed in a fraction of the time it takes to complete the theoretical study and algorithm of the system.\\
+  We are expecting to abide by the following schedule.
+  \begin{table}[H]
+    \begin{tabular}{c|c}
+      \textbf{Dates} & \textbf{Tasks} \\
+      \midrule
+      27 Feb. - 2 March & Theoretical study of the Kalman Filter \\
+      3 March - 5 March & Theoretical study of Proportional Discrete time Control Systems  \\
+      6 March - 9 March & Implementation of the various algorithms in C.\\
+      10 March - 13 March & Creation of the User Interface and system Integration. \\
+      13 March - 2 April & Testing and Debugging + Improvement of the System. \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  And it leaves us enough time to abide by the project deliverabes in the following weeks.
+  Now all that is left is the bibliography section
+
+  \pagebreak
+\bibliography{bibfile.bib}
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\nocite{*}
 
 
 \end{document}
