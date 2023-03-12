@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.10)  26 FEB 2023 20:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.3.12)  12 MAR 2023 19:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -675,59 +675,48 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip58
-) (/usr/share/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count356
-\sf@farskip=\skip59
-\sf@captopadj=\dimen303
-\sf@capskip=\skip60
-\sf@nearskip=\skip61
-\c@subfigure=\count357
-\c@subfigure@save=\count358
-\c@lofdepth=\count359
-\c@subtable=\count360
-\c@subtable@save=\count361
-\c@lotdepth=\count362
-\sf@top=\skip62
-\sf@bottom=\skip63
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+\c@subfigure=\count356
+\c@subtable=\count357
 ) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen304
-\WF@size=\dimen305
-\c@WF@wrappedlines=\count363
+\wrapoverhang=\dimen303
+\WF@size=\dimen304
+\c@WF@wrappedlines=\count358
 \WF@box=\box87
 \WF@everypar=\toks49
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip64
-\f@nch@O@elh=\skip65
-\f@nch@O@erh=\skip66
-\f@nch@O@olh=\skip67
-\f@nch@O@orh=\skip68
-\f@nch@O@elf=\skip69
-\f@nch@O@erf=\skip70
-\f@nch@O@olf=\skip71
-\f@nch@O@orf=\skip72
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
 )
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count364
+\c@tracingmulticols=\count359
 \mult@box=\box88
-\multicol@leftmargin=\dimen306
-\c@unbalance=\count365
-\c@collectmore=\count366
-\doublecol@number=\count367
-\multicoltolerance=\count368
-\multicolpretolerance=\count369
-\full@width=\dimen307
-\page@free=\dimen308
-\premulticols=\dimen309
-\postmulticols=\dimen310
-\multicolsep=\skip73
-\multicolbaselineskip=\skip74
+\multicol@leftmargin=\dimen305
+\c@unbalance=\count360
+\c@collectmore=\count361
+\doublecol@number=\count362
+\multicoltolerance=\count363
+\multicolpretolerance=\count364
+\full@width=\dimen306
+\page@free=\dimen307
+\premulticols=\dimen308
+\postmulticols=\dimen309
+\multicolsep=\skip68
+\multicolbaselineskip=\skip69
 \partial@page=\box89
 \last@line=\box90
-\maxbalancingoverflow=\dimen311
+\maxbalancingoverflow=\dimen310
 \mult@rightbox=\box91
 \mult@grightbox=\box92
 \mult@firstbox=\box93
@@ -768,15 +757,15 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box128
 \@tempa=\box129
 \@tempa=\box130
-\c@minrows=\count370
-\c@columnbadness=\count371
-\c@finalcolumnbadness=\count372
-\last@try=\dimen312
-\multicolovershoot=\dimen313
-\multicolundershoot=\dimen314
+\c@minrows=\count365
+\c@columnbadness=\count366
+\c@finalcolumnbadness=\count367
+\last@try=\dimen311
+\multicolovershoot=\dimen312
+\multicolundershoot=\dimen313
 \mult@nat@firstbox=\box131
 \colbreak@box=\box132
-\mc@col@check@num=\count373
+\mc@col@check@num=\count368
 ) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks50
@@ -790,20 +779,20 @@ File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
  (/usr/share/texmf/tex/latex/MinionPro/otfontdef.sty
 Package: otfontdef 2005/06/04 v0.1e OpenType font definition
 )
-\Mn@option@normalsize=\dimen315
+\Mn@option@normalsize=\dimen314
 Package MinionPro-FontDef Info: Configuration: smallfamily, noopticals, normalsize=12.0pt on input line 52.
-\Mn@config@cnt=\count374
+\Mn@config@cnt=\count369
  (/usr/share/texmf-dist/tex/generic/fltpoint/fltpoint.sty
 Package: fltpoint 2004/11/12 v1.1b floating point arithmetic
  (/usr/share/texmf-dist/tex/generic/fltpoint/fltpoint.tex
-\fp@loopcount=\count375
-\fp@loopcountii=\count376
-\fp@result=\count377
-\fp@carryover=\count378
-\fp@tempcount=\count379
-\fp@tempcountii=\count380
+\fp@loopcount=\count370
+\fp@loopcountii=\count371
+\fp@result=\count372
+\fp@carryover=\count373
+\fp@tempcount=\count374
+\fp@tempcountii=\count375
 ))
-\Mn@fontdimen=\dimen316
+\Mn@fontdimen=\dimen315
 ) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
@@ -905,14 +894,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> T1/MinionPro-OsF/m/it on input line 186.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  T1/MinionPro-OsF/m/it --> T1/MinionPro-OsF/eb/it on input line 187.
-\c@mv@tabular=\count381
+\c@mv@tabular=\count376
 LaTeX Font Info:    Overwriting symbol font `operators' in version `tabular'
 (Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-TOsF/m/n on input line 189.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `tabular'
 (Font)                  OML/MinionPro-TOsF/m/it --> OML/MinionPro-TOsF/m/it on input line 190.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `tabular'
 (Font)                  OT1/cmr/m/it --> T1/MinionPro-TOsF/m/it on input line 191.
-\c@mv@boldtabular=\count382
+\c@mv@boldtabular=\count377
 LaTeX Font Info:    Overwriting symbol font `operators' in version `boldtabular'
 (Font)                  T1/MinionPro-OsF/m/n --> T1/MinionPro-TOsF/eb/n on input line 194.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `boldtabular'
@@ -994,23 +983,23 @@ File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen317
+\arrowsize=\dimen316
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen318
-\pgfdecoratedremainingdistance=\dimen319
-\pgfdecoratedinputsegmentcompleteddistance=\dimen320
-\pgfdecoratedinputsegmentremainingdistance=\dimen321
-\pgf@decorate@distancetomove=\dimen322
-\pgf@decorate@repeatstate=\count383
-\pgfdecorationsegmentamplitude=\dimen323
-\pgfdecorationsegmentlength=\dimen324
+\pgfdecoratedcompleteddistance=\dimen317
+\pgfdecoratedremainingdistance=\dimen318
+\pgfdecoratedinputsegmentcompleteddistance=\dimen319
+\pgfdecoratedinputsegmentremainingdistance=\dimen320
+\pgf@decorate@distancetomove=\dimen321
+\pgf@decorate@repeatstate=\count378
+\pgfdecorationsegmentamplitude=\dimen322
+\pgfdecorationsegmentlength=\dimen323
 )
 \tikz@lib@dec@box=\box153
 ) (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex))
-\tikz@lib@circ@count=\count384
-\tikzcircuitssizeunit=\dimen325
+\tikz@lib@circ@count=\count379
+\tikzcircuitssizeunit=\dimen324
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1034,123 +1023,123 @@ File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 Package: circuitikz 2022/02/04{} The CircuiTikz circuit drawing package version 1.4.6
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen326
-\pgfarrowlength=\dimen327
-\pgfarrowwidth=\dimen328
-\pgfarrowlinewidth=\dimen329
+\pgfarrowinset=\dimen325
+\pgfarrowlength=\dimen326
+\pgfarrowwidth=\dimen327
+\pgfarrowlinewidth=\dimen328
 ) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
 File: tikzlibrarybending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
 File: pgfmodulebending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgftransformnonlinearflatness=\dimen330
+\pgftransformnonlinearflatness=\dimen329
 ) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@curvilinear@time@a=\dimen331
-\pgf@curvilinear@length@a=\dimen332
-\pgf@curvilinear@length@b=\dimen333
-\pgf@curvilinear@length@c=\dimen334
-\pgf@curvilinear@length@d=\dimen335
+\pgf@curvilinear@time@a=\dimen330
+\pgf@curvilinear@length@a=\dimen331
+\pgf@curvilinear@length@b=\dimen332
+\pgf@curvilinear@length@c=\dimen333
+\pgf@curvilinear@length@d=\dimen334
 )
-\pgf@arrows@the@rigidity=\dimen336
+\pgf@arrows@the@rigidity=\dimen335
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfpu.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count385
-\pgf@circ@count@b=\count386
-\pgf@circ@count@c=\count387
-\pgf@circ@res@up=\dimen337
-\pgf@circ@res@down=\dimen338
-\pgf@circ@res@zero=\dimen339
-\pgf@circ@res@left=\dimen340
-\pgf@circ@res@right=\dimen341
-\pgf@circ@res@other=\dimen342
-\pgf@circ@res@step=\dimen343
-\pgf@circ@res@temp=\dimen344
-\pgf@circ@Rlen=\dimen345
-\pgf@circ@scaled@Rlen=\dimen346
-\pgfstartlinewidth=\dimen347
+\pgf@circ@count@a=\count380
+\pgf@circ@count@b=\count381
+\pgf@circ@count@c=\count382
+\pgf@circ@res@up=\dimen336
+\pgf@circ@res@down=\dimen337
+\pgf@circ@res@zero=\dimen338
+\pgf@circ@res@left=\dimen339
+\pgf@circ@res@right=\dimen340
+\pgf@circ@res@other=\dimen341
+\pgf@circ@res@step=\dimen342
+\pgf@circ@res@temp=\dimen343
+\pgf@circ@Rlen=\dimen344
+\pgf@circ@scaled@Rlen=\dimen345
+\pgfstartlinewidth=\dimen346
 ) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
 \ctikz@scratchbox=\box154
 ) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count388
+\pgf@circ@res@count=\count383
 ) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen348
+\pgfcirc@labelshift=\dimen347
 ) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex) (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2022-04-04 v3.0.50 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen349
+\l__siunitx_angle_tmp_dim=\dimen348
 \l__siunitx_angle_marker_box=\box155
 \l__siunitx_angle_unit_box=\box156
-\l__siunitx_compound_count_int=\count389
+\l__siunitx_compound_count_int=\count384
  (/usr/share/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_number_exponent_fixed_int=\count390
-\l__siunitx_number_min_decimal_int=\count391
-\l__siunitx_number_min_integer_int=\count392
-\l__siunitx_number_round_precision_int=\count393
-\l__siunitx_number_group_minimum_int=\count394
+\l__siunitx_number_exponent_fixed_int=\count385
+\l__siunitx_number_min_decimal_int=\count386
+\l__siunitx_number_min_integer_int=\count387
+\l__siunitx_number_round_precision_int=\count388
+\l__siunitx_number_group_minimum_int=\count389
 \l__siunitx_table_tmp_box=\box157
-\l__siunitx_table_tmp_dim=\dimen350
-\l__siunitx_table_column_width_dim=\dimen351
+\l__siunitx_table_tmp_dim=\dimen349
+\l__siunitx_table_column_width_dim=\dimen350
 \l__siunitx_table_integer_box=\box158
 \l__siunitx_table_decimal_box=\box159
 \l__siunitx_table_before_box=\box160
 \l__siunitx_table_after_box=\box161
-\l__siunitx_table_before_dim=\dimen352
-\l__siunitx_table_carry_dim=\dimen353
-\l__siunitx_unit_tmp_int=\count395
-\l__siunitx_unit_position_int=\count396
-\l__siunitx_unit_total_int=\count397
+\l__siunitx_table_before_dim=\dimen351
+\l__siunitx_table_carry_dim=\dimen352
+\l__siunitx_unit_tmp_int=\count390
+\l__siunitx_unit_position_int=\count391
+\l__siunitx_unit_total_int=\count392
  (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen354
+\col@sep=\dimen353
 \ar@mcellbox=\box162
-\extrarowheight=\dimen355
+\extrarowheight=\dimen354
 \NC@list=\toks52
-\extratabsurround=\skip75
-\backup@length=\skip76
+\extratabsurround=\skip70
+\backup@length=\skip71
 \ar@cellbox=\box163
 ))) (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen356
-\c@nlinenum=\count398
+\rotheadsize=\dimen355
+\c@nlinenum=\count393
 \TeXr@lab=\toks53
 ) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen357
-\lightrulewidth=\dimen358
-\cmidrulewidth=\dimen359
-\belowrulesep=\dimen360
-\belowbottomsep=\dimen361
-\aboverulesep=\dimen362
-\abovetopsep=\dimen363
-\cmidrulesep=\dimen364
-\cmidrulekern=\dimen365
-\defaultaddspace=\dimen366
-\@cmidla=\count399
-\@cmidlb=\count400
-\@aboverulesep=\dimen367
-\@belowrulesep=\dimen368
-\@thisruleclass=\count401
-\@lastruleclass=\count402
-\@thisrulewidth=\dimen369
+\heavyrulewidth=\dimen356
+\lightrulewidth=\dimen357
+\cmidrulewidth=\dimen358
+\belowrulesep=\dimen359
+\belowbottomsep=\dimen360
+\aboverulesep=\dimen361
+\abovetopsep=\dimen362
+\cmidrulesep=\dimen363
+\cmidrulekern=\dimen364
+\defaultaddspace=\dimen365
+\@cmidla=\count394
+\@cmidlb=\count395
+\@aboverulesep=\dimen366
+\@belowrulesep=\dimen367
+\@thisruleclass=\count396
+\@lastruleclass=\count397
+\@thisrulewidth=\dimen368
 ) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip77
-\multirow@cntb=\count403
-\multirow@dima=\skip78
-\bigstrutjot=\dimen370
+\multirow@colwidth=\skip72
+\multirow@cntb=\count398
+\multirow@dima=\skip73
+\bigstrutjot=\dimen369
 ) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen371
-\TX@old@table=\dimen372
-\TX@old@col=\dimen373
-\TX@target=\dimen374
-\TX@delta=\dimen375
-\TX@cols=\count404
+\TX@col@width=\dimen370
+\TX@old@table=\dimen371
+\TX@old@col=\dimen372
+\TX@target=\dimen373
+\TX@delta=\dimen374
+\TX@cols=\count399
 \TX@ftn=\toks54
 ) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
@@ -1158,11 +1147,11 @@ Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex) (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex)) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count405
-\l__lipsum_a_int=\count406
-\l__lipsum_b_int=\count407
+\g__lipsum_par_int=\count400
+\l__lipsum_a_int=\count401
+\l__lipsum_b_int=\count402
  (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-\c@tcb@cnt@mytheo=\count408
+\c@tcb@cnt@mytheo=\count403
 runsystem(which pygmentize && touch Report.aex)...executed.
 
 runsystem(rm Report.aex)...executed.
@@ -1234,16 +1223,16 @@ LaTeX Font Info:    ... okay on input line 94.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count409
-\scratchdimen=\dimen376
+\scratchcounter=\count404
+\scratchdimen=\dimen375
 \scratchbox=\box164
-\nofMPsegments=\count410
-\nofMParguments=\count411
+\nofMPsegments=\count405
+\nofMParguments=\count406
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count412
-\MPscratchDim=\dimen377
-\MPnumerator=\count413
-\makeMPintoPDFobject=\count414
+\MPscratchCnt=\count407
+\MPscratchDim=\dimen376
+\MPnumerator=\count408
+\makeMPintoPDFobject=\count409
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1252,7 +1241,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1260,7 +1248,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `wrapfig' package detected.
-\c@lstlisting=\count415
+\c@lstlisting=\count410
 Package hyperref Info: Link coloring OFF on input line 94.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1269,7 +1257,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count416
+\c@section@level=\count411
 )
 LaTeX Info: Redefining \ref on input line 94.
 LaTeX Info: Redefining \pageref on input line 94.
@@ -1282,74 +1270,111 @@ LaTeX Info: Redefining \nameref on input line 94.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 94.
-<Figures/AUI.png, id=95, 332.442pt x 267.399pt>
+<Figures/AUI.png, id=83, 332.442pt x 267.399pt>
 File: Figures/AUI.png Graphic file (type png)
 <use Figures/AUI.png>
 Package pdftex.def Info: Figures/AUI.png  used on input line 113.
 (pdftex.def)             Requested size: 208.41644pt x 167.63806pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/AUI.png>] (./Report.toc
-LaTeX Font Info:    Trying to load font information for OML+MinionPro-TOsF on input line 5.
- (/usr/share/texmf/tex/latex/MinionPro/OMLMinionPro-TOsF.fd
-File: OMLMinionPro-TOsF.fd 2005/01/23 v2.0 font definitions for OML/MinionPro-TOsF.
- (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
-File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
-)))
-\tf@toc=\write7
-\openout7 = `Report.toc'.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.122 \newpage
-               [1] (./Report.lof)
-\tf@lof=\write8
-\openout8 = `Report.lof'.
-
- [2]
-LaTeX Font Info:    Trying to load font information for TS1+MinionPro-OsF on input line 131.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/AUI.png>]
+LaTeX Font Info:    Trying to load font information for TS1+MinionPro-OsF on input line 123.
  (/usr/share/texmf/tex/latex/MinionPro/TS1MinionPro-OsF.fd
 File: TS1MinionPro-OsF.fd 2005/01/23 v2.0 font definitions for TS1/MinionPro-OsF.
  (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
 File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
 ))
-<Figures/Final.png, id=140, 1142.2675pt x 640.3925pt>
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 130.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for OML+MinionPro-TOsF on input line 130.
+ (/usr/share/texmf/tex/latex/MinionPro/OMLMinionPro-TOsF.fd
+File: OMLMinionPro-TOsF.fd 2005/01/23 v2.0 font definitions for OML/MinionPro-TOsF.
+ (/usr/share/texmf/tex/latex/MinionPro/MinionPro-FontDef.sty
+File: MinionPro-FontDef.sty 2007/02/01 v2.2 font definition macros
+))
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.132 \newpage
+               [1] (./Report.toc)
+\tf@toc=\write7
+\openout7 = `Report.toc'.
+
+ [2] (./Report.lof)
+\tf@lof=\write8
+\openout8 = `Report.lof'.
+
+ [3] [4]
+<Figures/Final.png, id=143, 1142.2675pt x 640.3925pt>
 File: Figures/Final.png Graphic file (type png)
 <use Figures/Final.png>
-Package pdftex.def Info: Figures/Final.png  used on input line 173.
+Package pdftex.def Info: Figures/Final.png  used on input line 192.
 (pdftex.def)             Requested size: 333.46758pt x 186.95006pt.
- [3] [4 <./Figures/Final.png>] [5] [6]
-Overfull \hbox (77.23474pt too wide) in paragraph at lines 389--390
+ [5 <./Figures/Final.png>]
+Overfull \hbox (77.23474pt too wide) in paragraph at lines 313--314
 [][] 
  []
 
-[7] [8]
-Overfull \hbox (12.02649pt too wide) in paragraph at lines 434--444
-[][] 
+[6] [7] [8]
+<Figures/PlotWindow.png, id=172, 1203.49625pt x 879.285pt>
+File: Figures/PlotWindow.png Graphic file (type png)
+<use Figures/PlotWindow.png>
+Package pdftex.def Info: Figures/PlotWindow.png  used on input line 354.
+(pdftex.def)             Requested size: 333.46758pt x 243.63551pt.
+<Figures/AllParam.png, id=173, 299.1175pt x 282.05376pt>
+File: Figures/AllParam.png Graphic file (type png)
+<use Figures/AllParam.png>
+Package pdftex.def Info: Figures/AllParam.png  used on input line 363.
+(pdftex.def)             Requested size: 187.57352pt x 176.87708pt.
+<Figures/OneParam.png, id=174, 327.2225pt x 276.03125pt>
+File: Figures/OneParam.png Graphic file (type png)
+<use Figures/OneParam.png>
+Package pdftex.def Info: Figures/OneParam.png  used on input line 367.
+(pdftex.def)             Requested size: 187.57352pt x 158.22815pt.
+ [9 <./Figures/PlotWindow.png>]
+<Figures/ParamResult.png, id=181, 537.00626pt x 33.12375pt>
+File: Figures/ParamResult.png Graphic file (type png)
+<use Figures/ParamResult.png>
+Package pdftex.def Info: Figures/ParamResult.png  used on input line 375.
+(pdftex.def)             Requested size: 333.46758pt x 20.56885pt.
+ [10 <./Figures/AllParam.png> <./Figures/OneParam.png> <./Figures/ParamResult.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 384--389
+
  []
 
-[9] [10] (./Report.bbl) [11] (./Report.aux)
+[11]
+<Figures/Amazon.png, id=195, 917.4275pt x 945.5325pt>
+File: Figures/Amazon.png Graphic file (type png)
+<use Figures/Amazon.png>
+Package pdftex.def Info: Figures/Amazon.png  used on input line 406.
+(pdftex.def)             Requested size: 208.41644pt x 214.79878pt.
+<Figures/DHL.png, id=196, 606.265pt x 762.85pt>
+File: Figures/DHL.png Graphic file (type png)
+<use Figures/DHL.png>
+Package pdftex.def Info: Figures/DHL.png  used on input line 411.
+(pdftex.def)             Requested size: 208.41644pt x 262.24068pt.
+ [12 <./Figures/Amazon.png (PNG copy)> <./Figures/DHL.png (PNG copy)>] (./Report.bbl) [13] (./Report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 885989F65F788F09C5A46EDFDD69D001;1737.
+(rerunfilecheck)             Checksum: C1A9FDF8C938684CAAE89A0BDDE77D6E;1498.
  ) 
 Here is how much of TeX's memory you used:
- 59704 strings out of 478238
- 1382610 string characters out of 5850456
- 2001593 words of memory out of 5000000
- 77053 multiletter control sequences out of 15000+600000
- 844134 words of font info for 127 fonts, out of 8000000 for 9000
+ 59592 strings out of 478238
+ 1381276 string characters out of 5850456
+ 1997240 words of memory out of 5000000
+ 76933 multiletter control sequences out of 15000+600000
+ 844447 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,96p,559b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_kbk33c.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_jidws5.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_so5ulq.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_nv7crj.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_guwirv.enc}</usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-Bold.pfb></usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-It.pfb></usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb>
-Output written on Report.pdf (12 pages, 361333 bytes).
+ 99i,11n,96p,559b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_kbk33c.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_jidws5.enc}{/usr/share/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_so5ulq.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_nv7crj.enc}{/usr/share/texmf/fonts/enc/dvips/MinionPro/a_guwirv.enc}</usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-Bold.pfb></usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-It.pfb></usr/share/texmf/fonts/type1/adobe/MinionPro/MinionPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Report.pdf (14 pages, 776964 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
+ 272 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,15 +1,30 @@
 \begin{thebibliography}{1}
 
+\bibitem{Topology}
+Álvaro Deibe, José~Augusto Antón~Nacimiento, Jesús Cardenal, and Fernando
+  López~Peña.
+\newblock A kalman filter for nonlinear attitude estimation using time variable
+  matrices and quaternions.
+\newblock {\em Sensors}, 20(23):6731, Nov 2020.
+
+\bibitem{KalmanFilter}
+Yuchao Huang.
+\newblock Kalmanfilter.
+\newblock \url{https://github.com/ycHepth/KalmanFilter%7D%7D}, 2019.
+
 \bibitem{Kim2011Kalman}
 Phil Kim and Lynn Huh.
 \newblock {\em Kalman filter for beginners: With {MATLAB} examples}.
 \newblock CreateSpace, 2011.
-\newblock [Online; accessed 2023-02-26].
 
 \bibitem{Oppenheim2013Discrete}
 Alan~V. Oppenheim and Ronald~W. Schafer.
 \newblock {\em Discrete-{Time} {Signal} {Processing}}.
 \newblock jul 23 2013.
-\newblock [Online; accessed 2023-02-26].
+
+\bibitem{STM32MCUWikiSolutions}
+{STMicroelectronics}.
+\newblock {STM32 MCU Wiki Solutions}.
+\newblock \url{https://wiki.st.com/stm32mcu/wiki/Solutions%7D%7D}.
 
 \end{thebibliography}

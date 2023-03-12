@@ -18,7 +18,7 @@
 
 \usepackage[hidelinks]{hyperref}    % Allows for the use of hyperlinks and the highlighting of text
 
-\usepackage{subfig}                 % Allows for the use of subfigures
+\usepackage{subcaption}                 % Allows for the use of subfigures
 \usepackage{wrapfig}                % Allows for the use of wrapped figures (figures that wrap around text)
 
 \usepackage{fancyhdr}               % Allows for the use of fancy headers and footers
@@ -117,6 +117,21 @@
 
 
 \newpage
+\section*{Preface}
+As of this phase of the project, we have decided to drop the following features of the project:
+\begin{itemize}
+  \item The third axis of rotation which is rotation around Z axis.  
+  \item The control system of the ultrasonic sensor, which was supposed to be done using a Proportional-Integral controller, but would be redundant with the implementation of the Kalman filter.
+\end{itemize}
+This is due to the fact that axis fusion will be extremely difficult and a lot more advanced and complex than what time allows us, by requiring a more advanced number system (quaternions) and more advanced concepts from Topology. \cite{Topology}\\
+The interface has been completed and is ready to be used, but the code is not yet operational because of delays in the shipment of hardware due to being stuck in customs, please refer to appendix A for details.\\
+The code will be completed and tested as soon as the hardware arrives.
+As of now, the code can be found in the following link, which includes all of our progress and the code for the interface and our advances for the System implementation in C. \\
+\url{https://github.com/Riyll/Quadcopter-Testing-Machine}
+
+\newpage
+
+
 
 \tableofcontents
 \newpage
@@ -131,10 +146,11 @@ Quadcopter and Aircraft applications in general require a lot of precision to en
   \item Positioning
   \item Velocity
   \item Acceleration
-  \item Orientation
+  \item Orientation (Roll, Pitch)
 \end{itemize}
 
-To test some of these parameters, a testing bench capable of measuring the parameters using sensors and displaying them in a user-friendly interface,for the aircraft designer would be a good starting point.
+To test these parameters, a testing bench capable of measuring them using sensors and displaying them in a user-friendly interface,for the aircraft designer would be a good starting point.
+The user will also be able to input ranges of the desired performance of the aircraft, and the system will be able to warn them if the aircraft is not performing as expected through LEDs and a Buzzer in addition to the graphical user interface.
 
 \section{System Components}
 The system will be composed of the following:
@@ -161,9 +177,12 @@ The following Table will specify the choice of each component.
     Bluetooth Module & HM-10 & \href{https://www.amazon.com/gp/product/B06WGZB2N4/ref=ox_sc_act_title_1?smid=AFLYC5O31PGVX&psc=1}{Here}  \\
     Power Supply & 5V 2A Power Supply & Already Available \\
     Gyroscope & MPU-6050 & \href{https://www.amazon.com/gp/product/B0B793846N/ref=ox_sc_act_title_2?smid=A1YZW40LYQY3L1&psc=1}{Here} \\
+    LED & - & Already Available \\
+    Buzzer & - & Already Available \\
     \bottomrule
   \end{tabular}
 \end{table}
+\newpage
 
 
 \section{System Architecture}
@@ -188,11 +207,11 @@ The mounting of the circuit will be done as follows:
     \draw (3.25,3.5) node(a1)[left]{$V_{cc}$};
 
     \draw (3.25,0.5) node(a2)[left]{GND};
-    \draw (2.5,1.25) node(a3)[left]{PA4};
-    \draw (2.5,1.75) node(a4)[left]{PA3};
-    \draw (2.5,2.25) node(a5)[left]{PA2};
-    \draw (2.5,2.75) node(a6)[left]{PA1};
-    \draw (3.2,1.75) node(a7)[right]{OUT};
+    \draw (2.5,1.25) node(a3)[left]{A4};
+    \draw (2.5,1.75) node(a4)[left]{A3};
+    \draw (2.5,2.25) node(a5)[left]{A2};
+    \draw (2.5,2.75) node(a6)[left]{A1};
+    \draw (3.2,1.75) node(a7)[right]{D8};
     \draw (6.5,1.75) node(a8)[rectangle]{HM-10};
     \draw (0.5,2.75) node(a9)[left]{VL53L1X};
     \draw (0.5,2.25) node(a10)[left]{VL53L1X};
@@ -214,102 +233,7 @@ The mounting of the circuit will be done as follows:
   \label{fig:system_architecture}
 \end{figure}
 Only the pins that are used in the circuit have been shown in the Figure.
-
-
-\section{System Implementation}
-\subsection{User Interface}
-The user interface will be implemented using Python and the PyQt5 Library, which is a Python binding for the Qt5 GUI Library. The user interface will be composed of the following:
-\begin{itemize}
-  \item \textbf{Main Window:} The main window will be the first window that the user will see when the program is launched. It will contain the following:
-  \begin{itemize}
-    \item \textbf{Connect Button:} The connect button will be used to connect to the microcontroller via Bluetooth.
-    \item \textbf{Disconnect Button:} The disconnect button will be used to disconnect from the microcontroller.
-    \item \textbf{Start Button:} The start button will be used to start the data acquisition from the microcontroller.
-    \item \textbf{Stop Button:} The stop button will be used to stop the data acquisition from the microcontroller.
-    \item \textbf{Exit Button:} The exit button will be used to exit the program.
-  \end{itemize}
-  \item \textbf{Settings Window:} The settings window will be used to set the parameters for the data acquisition from the microcontroller. It will contain the following:
-  \begin{itemize}
-    \item \textbf{Start Button:} The start button will be used to start the data acquisition from the microcontroller.
-    \item \textbf{Stop Button:} The stop button will be used to stop the data acquisition from the microcontroller.
-    \item \textbf{Exit Button:} The exit button will be used to exit the program.
-  \end{itemize}
-  \item \textbf{Data Acquisition Window:} The data acquisition window will be used to display the data acquired from the microcontroller. It will contain the following:
-  \begin{itemize}
-    \item \textbf{Start Button:} The start button will be used to start the data acquisition from the microcontroller.
-    \item \textbf{Stop Button:} The stop button will be used to stop the data acquisition from the microcontroller.
-    \item \textbf{Exit Button:} The exit button will be used to exit the program.
-  \end{itemize}
-\end{itemize}
-
-The user will be able to input a range for each parameter, or chose to ignore some of them, or even all of them in case of simple visualization of the data. If any system computed variable during any instant $t$ is not within the range specific by the user, it will trigger a response of LEDs and Sound Emitters which will signal that the quadcopter is not functioning as desired.
-
-\subsection{Calculations and Measurements}
-The microcontroller will be responsible for taking the measurements from the sensors and performing the necessary calculations and sending the results to the user interface. The microcontroller will be responsible for the following:
-
-\begin{itemize}
-  \item \textbf{Distance Measurement:} The distance measurement will be straightforward, the microcontroller will be automatically given the distance between the sensor and the object in front of it with the time of flight of the ultrasound signal.
-  \item \textbf{Velocity Measurement:} The velocity measurement will be done point by point to be able to draw a graph of the velocity across each axis. The velocity will be calculated straightforwadly by the taking the distance $\Delta d$ at a time $t_i$ between points $i-1$ and $i$ and dividing it by the time interval between two sent iterations.
-    \begin{equation}
-      v_i = \frac{\Delta d}{\Delta t}
-    \end{equation}  
-  \item \textbf{Acceleration Measurement:} The acceleration measurement will be done point by point to be able to draw a graph of the acceleration across each axis. The acceleration will be calculated straightforwadly by the taking the velocity $\Delta v$ at a time $t_i$between points $i-1$ and $i$ and dividing it by the time interval between two sent iterations.
-    \begin{equation}
-      a_i = \frac{\Delta v}{\Delta t}
-    \end{equation}
-  \item \textbf{Orientation Measurement:} The measurement of the orientation is a bit more complex, but by using a Gyroscope, we could be comparing the inclination of the quadcopter with a base value then calculate the error and send it to the user interface.
-\end{itemize}
-
-\subsection{Control System}
-The emission of the hyper-sound waves will be controlled via a Discrete Proportional Controller, which is a simple controller that is used to control the frequency of the sound waves emitted by the sound emitters. The controller will be designed as follows:
-\begin{equation}
-  u(n) = K_p e(n)
-\end{equation}
-Where $u(n)$ is the control signal, $K_p$ is the proportional gain, and $e(n)$ is the error signal \cite{Oppenheim2013Discrete}. The error signal will be calculated as follows:
-\begin{equation}
-  e(n) = r(n) - y(n)
-\end{equation}
-Where $r(n)$ is the reference signal, and $y(n)$ is the output signal. The reference signal will be the desired frequency of the sound waves, and the output signal will be the frequency of the sound waves emitted by the sound emitters. The controller will be implemented in the microcontroller, and the microcontroller will be responsible for sending the control signal to the sound emitters.
-\tikzstyle{block} = [draw, fill=white, rectangle, 
-    minimum height=3em, minimum width=6em]
-\tikzstyle{sum} = [draw, fill=white, circle, node distance=1cm]
-\tikzstyle{input} = [coordinate]
-\tikzstyle{output} = [coordinate]
-\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
-
-\begin{figure}[H]
-  \centering
- \begin{tikzpicture}[auto, node distance=2cm,>=latex']
-
-    \node [input, name=input] {};
-    \node [sum, right of=input] (sum) {-};
-    \node [block, right of=sum] (controller) {Controller};
-    \node [block, right of=controller, pin={[pinstyle]},
-            node distance=3cm] (system) {System};
-
-    \draw [->] (controller) -- node[name=u] {$u$} (system);
-    \node [output, right of=system] (output) {};
-    %\node [block, below of=u] (measurements) {Measurements};
-    \coordinate [below of=u] (measurements) {};
-
-    \draw [draw,->] (input) -- node {$r$} (sum);
-    \draw [->] (sum) -- node {$e$} (controller);
-    \draw [->] (system) -- node [name=y] {$y$}(output);
-    %\draw [->] (y) |- (measurements);
-    \draw [-] (y) |- (measurements);
-    %\draw [->] (measurements) -| node[pos=0.99] {$-$} 
-    \draw [->] (measurements) -| %node[pos=1.00] {$-$} 
-        node [near end] {$y$} (sum);
-        
-    %\draw [->] 
-  \end{tikzpicture}
-  \caption{Block Diagram of the Control System}
-\end{figure}
-The controller is planned to be completed before the next phase of the project.
-
-
-
-
+Unfortunately, it is not possible to simulate the circuit using popular circuit simulation software such as Proteus or Multisim, as either the MPU6050 or the Ultrasound sensors are not supported with the available libraries.
 \tikzstyle{startstop} = [rectangle, rounded corners, 
 minimum width=3cm, 
 minimum height=1cm,
@@ -392,64 +316,113 @@ draw=black]
 \end{figure}
 
 
-\section{Kalman Filter}
-The Kalman Filter is a state estimation algorithm that is used to estimate the state of a system given a set of measurements. It is used in a wide variety of applications such as robotics, navigation, and control. The Kalman Filter is a recursive algorithm that uses the previous state and the current measurement to estimate the current state. The Kalman Filter is composed of two parts, the prediction step and the update step.\cite{Kim2011Kalman} 
-\subsection{Prediction Step}
-The prediction step is used to predict the state of the system at the next time step. It is composed of the following:
+
+
+
+\section{Calculations and Measurements}
+The microcontroller will be responsible for taking the measurements from the sensors and performing the necessary calculations and sending the results to the user interface. The microcontroller will be responsible for the following:
+
 \begin{itemize}
-  \item \textbf{State Prediction:} The state prediction is used to predict the state of the system at the next time step. It is calculated by using the following equation:
+  \item \textbf{Distance Measurement:} The distance measurement will be straightforward, the microcontroller will be automatically given the distance between the sensor and the object in front of it with the time of flight of the ultrasound signal.
+  \item \textbf{Velocity Measurement:} The velocity measurement will be done point by point to be able to draw a graph of the velocity across each axis. The velocity will be calculated straightforwadly by the taking the distance $\Delta d$ at a time $t_i$ between points $i-1$ and $i$ and dividing it by the time interval between two sent iterations.
     \begin{equation}
-      \hat{x}_{k+1} = A\hat{x}_k + B u_k
-    \end{equation}
-  \item \textbf{Covariance Prediction:} The covariance prediction is used to predict the covariance of the system at the next time step. It is calculated by using the following equation:
+      v_i = \frac{\Delta d}{\Delta t}
+    \end{equation}  
+  \item \textbf{Acceleration Measurement:} The acceleration measurement will be done point by point to be able to draw a graph of the acceleration across each axis. The acceleration will be calculated straightforwadly by the taking the velocity $\Delta v$ at a time $t_i$between points $i-1$ and $i$ and dividing it by the time interval between two sent iterations.
     \begin{equation}
-      P_{k+1} = A P_k A^T + Q
+      a_i = \frac{\Delta v}{\Delta t}
     \end{equation}
-\end{itemize}
-\subsection{Update Step}
-The update step is used to update the state of the system at the current time step. It is composed of the following:
-\begin{itemize}
-  \item \textbf{Kalman Gain:} The Kalman Gain is used to calculate the optimal weighting between the prediction and the measurement. It is calculated by using the following equation:
-    \begin{equation}
-      K_k = P_{k+1} H^T (H P_{k+1} H^T + R)^{-1}
-    \end{equation}
-  \item \textbf{State Update:} The state update is used to update the state of the system at the current time step. It is calculated by using the following equation:
-    \begin{equation}
-      \hat{x}_k = \hat{x}_{k+1} + K_k (z_k - H \hat{x}_{k+1})
-    \end{equation}
-  \item \textbf{Covariance Update:} The covariance update is used to update the covariance of the system at the current time step. It is calculated by using the following equation:
-    \begin{equation}
-      P_k = (I - K_k H) P_{k+1}
-    \end{equation}
+  \item \textbf{Orientation Measurement:} The measurement of the orientation is a bit more complex, but by using a Gyroscope, we could be comparing the inclination of the quadcopter with a base value then calculate the error and send it to the user interface.
 \end{itemize}
 
-We will be using the Kalman Filter to minimize the error in the measurements of the sensors. The Kalman Filter will be used to estimate the state of the system at each time step. The state of the system will be the position of the quadcopter in the 3D space. The measurements will be the distance measurements from the sensors and the orientation of the quadcopter.
+To ensure the maximization of the accuracy of the results, we will be computing the Position, Velocity, and Acceleration of the quadcopter in another way using the Accelerometer, using the following equations:
+\begin{equation}
+  \begin{aligned}
+    \Delta x &= \frac{1}{2}a_x\Delta t^2 + v_x\Delta t \\
+    \Delta v &= a_x\Delta t
+  \end{aligned}
+\end{equation}
+These will be the combined with the results of the Ultrasonic Sensor to get the most accurate results.
 
-The Kalman Filter is planned to be completed before the end of the next Phase.
+\newpage
+\section{Graphical User Interface}
+The graphical user interface will be responsible for displaying the graphs of the parameters of the quadcopter, the user interface is separated into two windows:
+\begin{itemize}
+  \item \textbf{Main Plot Window:} The main plot window will be responsible for displaying the graphs of the parameters of the quadcopter.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/PlotWindow.png}
+    \caption{Main Plot Window}
+  \end{figure}
+  These graphs are updated in real time as the quadcopter travels.
+  \item \textbf{Parameter Specification Window:} This window will be where the user inputs the minimum and maximum values of the parameters (ranges) for which they think the Quadcopter will be working, to be then alerted using LEDs and buzzers about the performance of the quadcopter not being within the specified ranges. Clicking on each parameter prompts a new window for which the user will be able to input their desired ranges.
+    \begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Figures/AllParam.png}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{Figures/OneParam.png}
+    \end{subfigure}
+    \caption{Parameter Specification Window}
+  \end{figure}
+P refers to position, A to acceleration, and V to velocity, Theta is the angle of rotation (Pitch and Roll).\\
+  The inputed ranges are stored in the local memory and communicated to the microcontroller using the serial port. The microcontroller will then be responsible for comparing the values of the parameters with the ranges and alerting the user using LEDs and buzzers.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/ParamResult.png}
+    \caption{Terminal Output Results after the input}
+  \end{figure}
+\end{itemize}
+Note: All the used values are Dummy Data as we cannot synchronize the data without the hardware.
+
+\newpage
+
+\section{Sensor Fusion using Kalman Filters}
+Since accelerometer and gyroscope sensors are both used together to determine the parameters (attitude) of the aircraft, we want to ensure that both of these sensors can have acceptable accuracy since the information required by the tester must be very precise. Combining both of them leads to deviation and the noise in the environment perturbates the sensing.
+To overcome this problem, we will be using a Kalman Filter to fuse the data from both sensors to ensure that the data is as accurate as possible.\\
+The Kalman Filter is a recursive algorithm that uses the previous state of the system to predict the next state of the system. It uses the measurements of the system to correct the prediction and ensure that the prediction is as accurate as possible.\\
+We will be using a Kalman Filter library given by \cite{KalmanFilter} to implement the Kalman Filter in our system.\\
+The Libraries have been modified accordingly and are integrated into the system as can be found in the GitHub repository linked in the Preface.\\
+
+
+
+
+
 
 \section{Conclusion and Future Work}
-  The theoretical part of the project is still ongoing, but as it makes up the bulk of the project, and it will offer us a fruitful learning experience concerning both Kalman Filters and Discrete Time Control Systems, it is expected that the physical implementation of the project will start by the 10th of March, and will mostly be completed in a fraction of the time it takes to complete the theoretical study and algorithm of the system.\\
-  We are expecting to abide by the following schedule.
-  \begin{table}[H]
-    \begin{tabular}{c|c}
-      \textbf{Dates} & \textbf{Tasks} \\
-      \midrule
-      27 Feb. - 2 March & Theoretical study of the Kalman Filter \\
-      3 March - 5 March & Theoretical study of Proportional Discrete time Control Systems  \\
-      6 March - 9 March & Implementation of the various algorithms in C.\\
-      10 March - 13 March & Creation of the User Interface and system Integration. \\
-      13 March - 2 April & Testing and Debugging + Improvement of the System. \\
-      \bottomrule
-    \end{tabular}
-  \end{table}
-  And it leaves us enough time to abide by the project deliverabes in the following weeks.
-  Now all that is left is the bibliography section
+    The graphical user interface, which makes up more than a quarter of the project implementation is already completed, and communication with the Microcontroller is already configured. In addition, the theoretical study of Kalman Filter which is the principal concept that is behind this project is also completed, with a good start in implementation in the code for the STM32 Microcontroller which will hopefully be completed once the parts are received. 
+    The progress is definitely not as successful as we had hoped, but a lot of work was done from our part these last 2 weeks, which will hopefully smoothen the final part of the implementation to deliver an impeccable build.
+
+
+   \newpage
+    \appendix
+
+    \section{Shipment Delay proofs}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.5\textwidth]{Figures/Amazon.png}
+    \end{figure}
+    The Wednesday presented in the picture was supposed to be the 8th of March.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.5\textwidth]{Figures/DHL.png}
+    \end{figure}
+
+
+
+
 
   \pagebreak
 \bibliography{bibfile.bib}
 \addcontentsline{toc}{section}{References}
 \bibliographystyle{plain}
 \nocite{*}
+
+
+
 
 
 \end{document}
